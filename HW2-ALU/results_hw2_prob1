@@ -1,0 +1,75 @@
+# Break key hit
+quit -sim
+vlog -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0 C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:13:00 on Apr 30,2020
+# vlog -reportprogress 300 -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0 C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv 
+# -- Compiling module tb_hw2_prob1
+# 
+# Top level modules:
+# 	tb_hw2_prob1
+# End time: 15:13:00 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_hw2_prob1
+# vsim 
+# Start time: 15:13:01 on Apr 30,2020
+# Loading sv_std.std
+# Loading work.tb_hw2_prob1
+# Loading work.hw2_prob1
+# ** Warning: (vsim-3839) C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv(30): Variable '/tb_hw2_prob1/Y', driven via a port connection, is multiply driven. See C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv(17).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_hw2_prob1 File: C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv
+run -all
+# A = 0, B = 0, C = 0, D = 0, Y = 0time =                    0
+# A = 0, B = 0, C = 0, D = 1, Y = 0time =                    5
+# A = 0, B = 0, C = 1, D = 0, Y = 0time =                   10
+# A = 0, B = 0, C = 1, D = 1, Y = 0time =                   15
+# A = 0, B = 1, C = 0, D = 0, Y = 0time =                   20
+# A = 0, B = 1, C = 0, D = 1, Y = 0time =                   25
+# A = 0, B = 1, C = 1, D = 0, Y = 1time =                   30
+# A = 0, B = 1, C = 1, D = 1, Y = 0time =                   35
+# A = 1, B = 0, C = 0, D = 0, Y = 0time =                   40
+# A = 1, B = 0, C = 0, D = 1, Y = 0time =                   45
+# A = 1, B = 0, C = 1, D = 0, Y = 0time =                   50
+# A = 1, B = 0, C = 1, D = 1, Y = 0time =                   55
+# A = 1, B = 1, C = 0, D = 0, Y = 0time =                   60
+# A = 1, B = 1, C = 0, D = 1, Y = 0time =                   65
+# A = 1, B = 1, C = 1, D = 0, Y = 0time =                   70
+# A = 1, B = 1, C = 1, D = 1, Y = 0time =                   75
+# A = 0, B = 0, C = 0, D = 0, Y = 0time =                   80
+quit -sim
+vlog -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0 C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 15:13:25 on Apr 30,2020
+# vlog -reportprogress 300 -work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0 C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv 
+# -- Compiling module tb_hw2_prob1
+# 
+# Top level modules:
+# 	tb_hw2_prob1
+# End time: 15:13:25 on Apr 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_hw2_prob1
+# vsim 
+# Start time: 15:13:26 on Apr 30,2020
+# Loading sv_std.std
+# Loading work.tb_hw2_prob1
+# Loading work.hw2_prob1
+# ** Warning: (vsim-3839) C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv(30): Variable '/tb_hw2_prob1/Y', driven via a port connection, is multiply driven. See C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv(17).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_hw2_prob1 File: C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW2/tb_hw2_prob1.sv
+run -all
+# A = 0, B = 0, C = 0, D = 0, Y = 0	time =                    0
+# A = 0, B = 0, C = 0, D = 1, Y = 0	time =                    5
+# A = 0, B = 0, C = 1, D = 0, Y = 0	time =                   10
+# A = 0, B = 0, C = 1, D = 1, Y = 0	time =                   15
+# A = 0, B = 1, C = 0, D = 0, Y = 0	time =                   20
+# A = 0, B = 1, C = 0, D = 1, Y = 0	time =                   25
+# A = 0, B = 1, C = 1, D = 0, Y = 1	time =                   30
+# A = 0, B = 1, C = 1, D = 1, Y = 0	time =                   35
+# A = 1, B = 0, C = 0, D = 0, Y = 0	time =                   40
+# A = 1, B = 0, C = 0, D = 1, Y = 0	time =                   45
+# A = 1, B = 0, C = 1, D = 0, Y = 0	time =                   50
+# A = 1, B = 0, C = 1, D = 1, Y = 0	time =                   55
+# A = 1, B = 1, C = 0, D = 0, Y = 0	time =                   60
+# A = 1, B = 1, C = 0, D = 1, Y = 0	time =                   65
+# A = 1, B = 1, C = 1, D = 0, Y = 0	time =                   70
+# A = 1, B = 1, C = 1, D = 1, Y = 0	time =                   75
+# A = 0, B = 0, C = 0, D = 0, Y = 0	time =                   80

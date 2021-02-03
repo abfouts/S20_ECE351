@@ -1,0 +1,93 @@
+/////////////////////////////////////////////////////////////
+// pmodSSD_Interface.sv - hw3 problem 3 7 segment decoder
+// 
+// Author: 	Abram Fouts
+// Date:	5/23/2020
+//
+// Description:
+// ------------
+// Decoder function for the 7 segment display
+/////////////////////////////////////////////////////////////
+
+module pmodSSD_Interface 
+#(  
+parameter SIMULATE = 1  			// set to 1 for this project, else it will take          
+						// 100?s of thousand cycles of simulation time       
+   						// for each digit change. 
+) 
+(  
+input logic   		clk, reset,   		// clock and reset signals  
+input logic[4:0]  	digit1, digit0,  	// digit character codes  
+output logic   		SSD_AG, SSD_AF,   	// Anode segment drivers        
+			SSD_AE, SSD_AD,        
+			SSD_AC, SSD_AB, SSD_AA,  
+output logic   SSD_C     			// Common cathode "digit enable" 
+);	
+
+logic tick_60Hz = 1'b0;
+logic tick_120Hz = 1'b1;
+logic digSwitch = 1'b0;
+
+assign SSD_C = tick_60Hz;
+
+// square up the clock to drive the digit enable 
+// This will give you a 50% duty cycle clock at 1/2 the frequency 
+always_ff @(posedge clk) begin: digit_enable  
+if (reset)   
+	tick_60Hz <= 1'b0;  
+else if (tick_120Hz)  // 2x the frequency for 50% on / 50% off   
+	tick_60Hz <= ~tick_60Hz;  
+else   
+	tick_60Hz <= tick_60Hz; 
+end: digit_enable
+
+//function instantiation / mux
+always_ff@(posedge tick_60Hz) begin
+	if(digSwitch) begin
+		decoder(digit1, {SSD_AA, SSD_AB, SSD_AC, SSD_AD, SSD_AE, SSD_AF, SSD_AG});
+		digSwitch <= 1'b0;	
+	end else begin
+		decoder(digit0, {SSD_AA, SSD_AB, SSD_AC, SSD_AD, SSD_AE, SSD_AF, SSD_AG});
+		digSwitch <= 1'b1;	
+	end
+end
+//Decoder function
+function logic [6:0] decoder (input logic [4:0] dig, output logic [6:0] seg);
+	case(dig)
+	0:	seg = 7'b1111110;
+	1:	seg = 7'b0000110;
+	2:	seg = 7'b1101101;
+	3:	seg = 7'b1111001;
+	4:	seg = 7'b0110011;
+	5:	seg = 7'b1011011;
+	6:	seg = 7'b1011111;
+	7:	seg = 7'b1110000;
+	8:	seg = 7'b1111111;
+	9:	seg = 7'b1111011;
+	10:	seg = 7'b1110111;
+	11:	seg = 7'b0011111;
+	12:	seg = 7'b1001110;
+	13:	seg = 7'b0111101;
+	14:	seg = 7'b1001111;
+	15:	seg = 7'b1000111;
+	16:	seg = 7'b1000000;
+	17:	seg = 7'b0100000;
+	18:	seg = 7'b0010000;
+	19:	seg = 7'b0001000;
+	20:	seg = 7'b0000100;
+	21:	seg = 7'b0000010;
+	22:	seg = 7'b0000001;
+	23:	seg = 7'b0000000;
+	24:	seg = 7'b0110111;
+	25:	seg = 7'b0001110;
+	26:	seg = 7'b1110111;
+	27:	seg = 7'b0000110;
+	28:	seg = 7'b0000101;
+	29:	seg = 7'b0000000;
+	30:	seg = 7'b0000000;
+	31:	seg = 7'b0000000;
+	endcase
+ 	return seg;
+endfunction
+
+endmodule

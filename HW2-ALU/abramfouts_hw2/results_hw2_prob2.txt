@@ -1,0 +1,72 @@
+vsim work.tb_hw2_prob2
+# vsim 
+# Start time: 16:40:25 on May 02,2020
+# Loading sv_std.std
+# Loading work.tb_hw2_prob2
+# Loading work.hw2_prob2
+run -all
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                    0
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                    5
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                   10
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                   15
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                   20
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                   25
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                   30
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                   35
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                   40
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                   45
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                   50
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                   55
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                   60
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                   65
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                   70
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                   75
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                   80
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                   85
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                   90
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                   95
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                  100
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                  105
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                  110
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                  115
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                  120
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                  125
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                  130
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                  135
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = z, en = 0	time =                  140
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = z, en = 0	time =                  145
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = z, en = 0	time =                  150
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = z, en = 0	time =                  155
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  160
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  165
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  170
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = 1, en = 1	time =                  175
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  180
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  185
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  190
+# x_in1 = 0, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = 0, en = 1	time =                  195
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  200
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  205
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  210
+# x_in1 = 0, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = 1, en = 1	time =                  215
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  220
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  225
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  230
+# x_in1 = 0, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = 0, en = 1	time =                  235
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  240
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  245
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  250
+# x_in1 = 1, x_in2 = 0, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = 1, en = 1	time =                  255
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  260
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = 1, en = 1	time =                  265
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = 1, en = 1	time =                  270
+# x_in1 = 1, x_in2 = 0, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = 0, en = 1	time =                  275
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = 0, en = 1	time =                  280
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 0, x_in5 = 1, y_out = 0, en = 1	time =                  285
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 0, y_out = 0, en = 1	time =                  290
+# x_in1 = 1, x_in2 = 1, x_in3 = 0, x_in4 = 1, x_in5 = 1, y_out = 0, en = 1	time =                  295
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 0, y_out = 0, en = 1	time =                  300
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 0, x_in5 = 1, y_out = 0, en = 1	time =                  305
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 0, y_out = 0, en = 1	time =                  310
+# x_in1 = 1, x_in2 = 1, x_in3 = 1, x_in4 = 1, x_in5 = 1, y_out = 0, en = 1	time =                  315
+# x_in1 = 0, x_in2 = 0, x_in3 = 0, x_in4 = 0, x_in5 = 0, y_out = 1, en = 1	time =                  320

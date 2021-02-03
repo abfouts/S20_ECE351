@@ -1,0 +1,13 @@
+# Compile of uart_tx.sv failed with 4 errors.
+# Compile of uart_tx.sv was successful.
+restart -f
+# Loading work.uart_tx
+# ** Warning: (vsim-3017) C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW4/uart.sv(49): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ns  Iteration: 0  Instance: /uart_tb_top/UART_DUT/uart_unit/uart_rx_unit File: C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW4/uart_rx.sv
+# ** Warning: (vsim-3722) C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW4/uart.sv(49): [TFMPC] - Missing connection for port 'smpl_tick'.
+run -all
+# TX RX Loopback 128 tests PASSED!!!
+# Time = 143230830:	 END OF UART TEST!!!
+# ** Note: $stop    : C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW4/uart_tb_top.sv(79)
+#    Time: 143230830 ns  Iteration: 1  Instance: /uart_tb_top
+# Break in Task run_test at C:/Users/Bram/OneDrive/Documents/School/Spring2020/ECE351/HW4/uart_tb_top.sv line 79
